@@ -2,8 +2,7 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
-  - init: Dummy command
-    command: ls -la
+  - init: cabal update && cabal install unordered-containers
 
 vscode:
   extensions:
