@@ -1,4 +1,4 @@
-FROM gitpod/workspace-full-vnc
+FROM gitpod/workspace-full
 
 # Install Haskell stack
 RUN brew install haskell-stack
