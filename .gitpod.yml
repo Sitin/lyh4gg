@@ -1,8 +1,8 @@
 image: gitpod/workspace-full-vnc
 
 tasks:
-  - init: 'Setup Cabal'
-    command: cabal update && cabal install unordered-containers
+  - init: 'Dummy command'
+    command: ls -la
 
 vscode:
   extensions:
