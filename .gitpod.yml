@@ -1,0 +1,12 @@
+image: gitpod/workspace-full-vnc
+
+tasks:
+  - init: 'Setup Cabal'
+    command: cabal update && cabal install unordered-containers
+
+vscode:
+  extensions:
+    - justusadam.language-haskell@3.3.0:N60fFLP+/IzuFJNhRQZk4A==
+    - hoovercj.haskell-linter@0.0.6:Jy5X7b76lStks7sJdhS3DA==
+    - phoityne.phoityne-vscode@0.0.24:FTkd1r93lYs3z95fjRROAg==
+    - dramforever.vscode-ghc-simple@0.1.13:X3A6Dr3LYAP8MxXBh/hb1A==
