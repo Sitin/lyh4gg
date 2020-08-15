@@ -1,7 +1,7 @@
 image: gitpod/workspace-full-vnc
 
 tasks:
-  - init: 'Dummy command'
+  - init: Dummy command
     command: ls -la
 
 vscode:
