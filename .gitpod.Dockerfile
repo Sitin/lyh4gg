@@ -14,7 +14,8 @@ RUN git clone https://github.com/haskell/haskell-ide-engine --branch 1.4 --singl
 ENV PATH=/home/gitpod/.local/bin:$PATH
 
 # Install Jupyter kernel Haskell
-#RUN brew install zeromq libmagic cairo pkg-config pango
-#RUN cd /workspace && git clone https://github.com/gibiansky/IHaskell
-#RUN cd /workspace/IHaskell && pip3 install -r requirements.txt && stack install --fast && ihaskell install --stack
-#RUN jupyter labextension install jupyterlab-ihaskell
+RUN brew install zeromq libmagic cairo pkg-config pango
+RUN cd /workspace && git clone https://github.com/gibiansky/IHaskell
+RUN cd /workspace/IHaskell && pip3 install -r requirements.txt
+# RUN cd /workspace/IHaskell && stack install --fast && ihaskell install --stack
+# RUN jupyter labextension install jupyterlab-ihaskell
